@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>ChestAI</AssemblyName>
+    <RootNamespace>ChestAI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Lồng LoginForm.Designer.cs và .resx vào LoginForm.cs -->
+    <Compile Update="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <!-- Lồng MainForm.Designer.cs và .resx vào MainForm.cs -->
+    <Compile Update="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Kết nối SQL Server -->
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    <!-- Gọi FastAPI -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <!-- Mã hóa mật khẩu -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <!-- SHAP chart (dùng LiveCharts2 cho biểu đồ) -->
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.WinForms" Version="2.0.0-rc2" />
+  </ItemGroup>
+
+</Project>

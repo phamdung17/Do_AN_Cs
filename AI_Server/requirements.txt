@@ -1,0 +1,31 @@
+# ─── AI Server (FastAPI) ────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9      # Upload file ảnh
+pydantic>=2.0.0
+
+# Deep Learning inference
+tensorflow>=2.12.0
+ultralytics>=8.0.0
+
+# NLP - Clinical BERT (HuggingFace)
+transformers>=4.38.0         # Bio_ClinicalBERT
+torch>=2.0.0                 # PyTorch backend cho BERT
+sentencepiece>=0.1.99        # Tokenizer dependency
+
+# Machine Learning Ensemble
+xgboost>=2.0.0               # XGBoost binary classifiers
+scikit-learn>=1.3.0          # IsotonicRegression, StandardScaler
+joblib>=1.3.0                # Parallel processing
+scipy>=1.11.0                # Probability calibration utilities
+
+# Xử lý ảnh
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# XAI - Grad-CAM
+tf-keras-vis>=0.8.5
+
+# XAI - SHAP (giải thích EHR + text features)
+shap>=0.44.0

@@ -1,0 +1,1 @@
+﻿// File này được thay thế bởi NewDiagnosisForm trong Form1.cs – không cần Designer.

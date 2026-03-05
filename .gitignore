@@ -1,0 +1,32 @@
+# Model files (quá nặng để commit)
+AI_Server/models/*.pt
+AI_Server/models/*.h5
+AI_Server/models/*.keras
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# .NET build output
+WinForms_App/ChestAI/bin/
+WinForms_App/ChestAI/obj/
+*.user
+
+# Kết quả chẩn đoán (ảnh heatmap, mask)
+Results/
+
+# IDE
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db

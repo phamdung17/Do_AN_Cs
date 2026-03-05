@@ -1,0 +1,1 @@
+﻿// File này được thay thế bởi DiagnosisResultForm trong Form2.cs – không cần Designer.
